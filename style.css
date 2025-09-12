@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montagu Slab", serif;
+}
+
+.marquee{
+    overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: rgb(125, 125, 234);
+  padding: 5px 0;
+  position:fixed;
+  width: 100%;
+}
+.marquee p{
+    display: inline-block;
+  padding-left: 100%;
+  animation:scroll  25s linear infinite;
+  font-size: 10px;
+  color: #3b2e2e;
+}
+ @keyframes scroll {
+   0%   { transform: translateX(0%); } 
+  100% { transform: translateX(-100%); }
+}
+
+.genlayout{
+    max-width: 1100px;
+    margin: auto;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.insideNav{
+    /* border: 2px  solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 3rem;
+}
+
+.navRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 7rem;
+    
+}
+
+.navRight { display:flex; font: 500 10px/1.2 system-ui; }
+.menu-link{ position:relative; text-decoration:none; color:#1a1a1a; }
+
+.menu-link[data-badge]::after{
+  content: attr(data-badge);
+  position:absolute; top:-13px; right:-14px;
+  font-size:5px; font-weight:400; letter-spacing:.3px;
+  line-height:18px; height:15px; padding:0 4px;
+  border-radius:6px; color:#fff;
+}
+
+.menu-link[data-variant="new"]::after { background:#1e90ff; }
+.menu-link[data-variant="hot"]::after { background:#e53935; }
+.menu-link[data-variant="sale"]::after { background: yellowgreen; }
+
+.navLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 8rem;
+    gap: 2rem;
+}
+
+.navLeft  > a > span{
+    color: yellowgreen;
+}
+.like  > a > span{
+    color: yellowgreen;
+}
+.chart  > a > span{
+    color: yellowgreen;
+}
+
+.navRight>a{
+    color: black;
+    text-decoration: none;
+    padding-left: .6rem;
+    font-size: .5rem;
+    color: yellowgreen;
+}
+
+.navRight > a > span{
+    color: yellowgreen;
+}
+.shop>a,span{
+    color: yellowgreen;
+    font-size: .8rem;
+    padding-left: .5rem;
+    text-decoration: none;
+}
+.product>a,span{
+    color: yellowgreen;
+    font-size: .8rem;
+    padding-left: .5rem;
+    text-decoration: none;
+}
+.collection>a,span{
+    color: yellowgreen;
+    font-size: .8rem;
+    padding-left: .5rem;
+    text-decoration: none;
+}
+
+.like>a>span{
+    position: relative;
+}
+.tinyTrend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-right: 15rem;
+}
+
+.homeCon>h4{
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+    color: yellowgreen;
+    font-size: .5rem;
+}
+.homeCon>h1{
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+    color: fuchsia;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.homeCon>p{
+    padding-bottom: .5rem;
+    color: yellowgreen;
+    font-weight: 500;
+    font-size: .7rem;
+
+}
+.homeCon>button{
+    /* border: 2px solid; */
+    padding: .5rem 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: darkgoldenrod;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 600;
+}
+button{
+    border: none;
+}
+
+.secOne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 3rem;
+    gap: 2rem;
+}
+
+.whoWeAre{
+    border: 1px solid yellowgreen;
+   width: 400px;
+   border-radius: 10px;
+   padding: 2rem 1rem;
+}
+.ourProduct{
+    border: 1px solid yellowgreen;
+   width: 400px;
+   border-radius: 10px;
+   padding: 2rem 1rem;
+}
+.howWeWork{
+    border: 1px solid yellowgreen;
+   width: 400px;
+   border-radius: 10px;
+   padding: 1.2rem 1rem;
+}
+
+.secOne>.whoWeAre>img{
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+.secOne>.howWeWork>img{
+    display: block;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+.secOne>.ourProduct>img{
+    display: block;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+.secOne>.ourProduct>p{
+    font-size: .7rem;
+    text-align: center;
+    color: #1f2a44;
+}
+.secOne>.howWeWork>p{
+   font-size: .7rem;
+   text-align: center;
+   color: #1f2a44;
+}
+.secOne>.whoWeAre>p{
+   font-size: .7rem;
+   text-align: center;
+   color: #1f2a44;
+}
+.secOne>.ourProduct>h4{
+    text-transform: uppercase;
+    text-align: center;
+    color: yellowgreen;
+    padding-bottom: .5rem;
+}
+.secOne>.howWeWork>h4{
+   text-transform: uppercase;
+   text-align: center;
+   color: yellowgreen;
+   padding-bottom: .5rem;
+}
+.secOne>.whoWeAre>h4{
+  text-transform: uppercase;
+   text-align: center;
+   color: yellowgreen;
+   padding-bottom: .5rem;
+}
+
+#ourProduct{
+    padding-block: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+#ourProduct>h6{
+    color: yellowgreen;
+    padding-bottom: .5rem;
+    text-decoration: dotted;
+}
+#ourProduct>h1{
+    color: yellowgreen;
+    text-decoration: dotted;
+}
+.allProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+.allProduct>h6{
+    color: #4e4d4d;
+}
+
+.proItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+
+h4{
+   color: yellowgreen;
+    text-align: center;
+    padding-block: 1rem;
+}
+.span{
+    
+    text-align: center;
+}
+
+.span>h6>span{
+    color: gold;
+}
+h5{
+    text-align: center;
+    padding-top: .5rem;
+}
+
+
+h5>span{
+    color: gainsboro;
+    text-decoration: line-through;
+}
+.gWear{
+   background-color: rgb(232, 228, 228);
+    padding-block: .5rem;
+    padding-right: .7rem;
+    border-radius: 7px;
+}
+
+.gwearCon{
+    width: 300px;
+    
+}
+
+.pen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pen>p>span{
+    border-bottom-right-radius: 7px;
+    background-color: #e63946;
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+}
+.pen>span{
+    color: yellowgreen;
+}
+.p>p{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: .7rem;
+}
+.secThree{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.imgCon>p{
+    font-size: .6rem;
+    padding-bottom: 1rem;
+}
+.imgCon>h1{
+    color: #1e90ff;
+    padding-bottom: .7rem;
+}
+
+.imgCon>h6{
+    font-size: 1rem;
+}
+.imgCon>h6>span{
+    text-decoration: line-through;
+    font-size: .5rem;
+    color: #4e4d4d;
+}
+.imgCon>h6>span{
+    color: gold;
+}
+.imgCon>p>span{
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+}
+
+.days{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+.dy>p{
+    text-transform: uppercase;
+    padding-top: .7rem;
+}
+.hrs>p{
+    text-transform: uppercase;
+    padding-top: .7rem;
+}
+.mins>p{
+    text-transform: uppercase;
+    padding-top: .7rem;
+}
+.secs>p{
+    text-transform: uppercase;
+    padding-top: .7rem;
+}
+
+.dy>h6>span{
+    border-radius: 100%;
+    padding: .7rem .5rem;
+    background-color: #9e9c9c;
+}
+.hrs>h6>span{
+    border-radius: 100%;
+    padding: .7rem .5rem;
+    background-color: #9e9c9c;
+}
+.mins>h6>span{
+    border-radius: 100%;
+    padding: .7rem .5rem;
+    background-color: #9e9c9c;
+}
+.secs>h6>span{
+    border-radius: 100%;
+    padding: .7rem .5rem;
+    background-color: #9e9c9c;
+}
+.button>button{
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: yellowgreen;
+}
+.button>span{
+    padding: .6rem .6rem;
+    gap: 2rem;
+    background-color: #f8f6f6;
+    border-radius: 5px;
+    color: yellowgreen;
+}
+.carousel-caption>img{
+    border-radius: 100%;
+    padding-block: 1rem;
+    padding-bottom: 1rem;
+}
+.carousel-caption>p{
+    padding-bottom: 2rem;
+    color: #1a1a1a;
+}
+.carousel-caption>h1{
+    text-transform: capitalize;
+    color: #1a1a1a;
+}
+
+.carousel-caption>h5{
+    padding-bottom: 5rem;
+    color: #1a1a1a;
+}
+
+.carousel-caption>h6>span{
+    color: gold;
+}
+.carousel-caption>h6{
+    color: #1a1a1a !important;
+}
+
+.secFour{
+    background-image: url(./image/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.fourCont>button{ 
+    padding: .5rem 1rem;
+    background-color: yellowgreen;
+    border-radius: 15px;
+}
+
+.secSix{
+    padding-block: 5rem;
+}
+
+.blogs01{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    font-size: .5rem;
+}
+.blogs02{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    font-size: .5rem;
+}
+.blogs03{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+    font-size: .5rem;
+}
+.secSix > h5{
+    text-transform: capitalize;  
+    color: yellowgreen;
+    padding-top: 1rem;
+}
+.secSix > h1{
+    text-transform: capitalize;  
+    color: yellowgreen;
+    text-align: center;
+}
+.secSix > p{
+    text-transform: capitalize;  
+    font-size: 1rem;
+    text-align: center;
+}
+
+.blogs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.blogs2{
+   padding-top: 1.9rem; 
+}
+.blogs3{
+   padding-top: 1.9rem; 
+}
+    
+.blogs1{
+   padding-top: 1.9rem; 
+}
+.blogs1 > img{
+   border-radius: 10px;
+}
+.blogs1 > p{
+   padding-top: 1rem;
+}
+.blogs2 > img{
+   border-radius: 10px;
+}
+.blogs2 > p{
+   padding-top: 1rem;
+}
+.blogs3 > img{
+   border-radius: 10px;
+}
+.blogs3 > p{
+   padding-top: 1rem;
+}
+
+.blogs01 > p > span{
+    color: yellowgreen;
+    padding-right: .3rem;
+}
+.blogs02 > p > span{
+    color: yellowgreen;
+    padding-right: .3rem;
+}
+.blogs03 > p > span{
+    color: yellowgreen;
+    padding-right: .3rem;
+}
+
+.blogs01 > p:nth-child(2){
+    border: 1px solid;
+    padding-right: .5rem;
+    border-bottom: none;
+    border-top: none;
+}
+.blogs02 > p:nth-child(2){
+    border: 1px solid;
+    padding-right: .5rem;
+    border-bottom: none;
+    border-top: none;
+}
+.blogs03 > p:nth-child(2){
+    border: 1px solid;
+    padding-right: .5rem;
+    border-bottom: none;
+    border-top: none;
+}
+
+.secSeven{
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 1rem;
+}
+.subscribe > h2, span{
+    color: #fff;
+}
+.subscribe > h2 > span{
+    font-size: 1.5rem;
+}
+
+.longButt{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.longButt > p{
+    padding-top: .8rem;
+    font-size: .5rem;
+    padding-left: .5rem;
+    color: yellowgreen;
+}
+
+.longButt > button {
+    font-size: .5rem;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    background-color: darkgoldenrod;
+    color: #fff;
+}
+
+footer{
+    padding-block: 2rem;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border: .5px solid;
+    margin-block: 1rem;
+    padding-block: 1rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.afterSub > h3{
+    font-size: .7rem;
+    text-align: center;
+}
+.afterSub > p{
+    font-size: .7rem;
+}
+.afterSub > span{
+    color: yellowgreen;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.tiny > img{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.tiny > p{
+    text-align: center;
+    font-size: .9rem;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icon > a > span{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #4e4d4d;
+}
+
+.afterIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.tiny > h6{
+    text-align: center;
+    padding-top: .5rem;
+}
+.tiny > h6 > span{
+    color: yellowgreen;
+}
+
+
+ 
