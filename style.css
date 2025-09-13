@@ -45,6 +45,11 @@ nav{
     padding-block: 3rem;
 }
 
+
+.hamburger, #toggle{
+    display: none;
+}
+
 .navRight{
     display: flex;
     align-items: center;
@@ -269,6 +274,14 @@ button{
 }
 .allProduct>h6{
     color: #4e4d4d;
+}
+
+.allProduct > h6 > span{
+    color: yellowgreen;
+}
+
+.p > p > span{
+    color: yellowgreen;
 }
 
 .proItems{
@@ -686,6 +699,166 @@ footer{
 }
 .tiny > h6 > span{
     color: yellowgreen;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+
+    .insideNav{
+        width: calc(100% - 40px);
+        gap: 15rem;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .navRight , .navLeft{
+        display: none;
+        position: absolute;
+        width: 85%;
+        padding: 1.4rem 1rem;
+        top: 6rem;
+        right: 3px;
+        z-index: 1;
+        background-color: #0a0650;
+        opacity: 0.8;
+        border-bottom: 4px solid #fff;
+        transform: translate(100% 0);
+        transition: transform 0.5s cubic-bezier(0.077, 0.2, 0.05, 1);
+    }
+
+    .navRight{
+        flex-direction: column;
+    }
+
+    .navRight > a{
+        flex-direction: column;
+    }
+
+    .navLeft{
+        font-size: .5rem;
+    }
+    
+     #toggle:checked + .navRight{
+        display: block;
+        transform: none;
+    }
+
+    .tinyTrend{
+        width: calc(100% - 40px);
+        display: block;
+    }
+
+    .tinyTrend > img{
+        width: 300px;
+    }
+
+    .homeCon > h4{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .homeCon > h1{
+        width: 300px;
+    }
+
+    .homeCon > p{
+        width: 250px;
+    }
+
+    .ourProduct{
+        width: calc(100% - 40px);
+    }
+
+    .allProduct{
+        width: calc(100% - 40px);
+    }
+    
+    .allProduct > h6{
+        font-size: .6rem;
+    }
+    .allProduct > h6 > span{
+        font-size: .6rem;
+    }
+
+    .p > p > span{
+        font-size: .7rem;
+    }
+    .secOne{
+        width: calc(100% - 40px);
+        flex-direction: column;
+    }
+
+    .whoWeAre{
+      width: calc(100% - 40px);  
+    }
+    .ourProduct{
+      width: calc(100% - 40px);  
+    }
+    .howWeWork{
+      width: calc(100% - 40px);  
+    }
+
+    .proItems{
+        width: calc(100% - 40px);
+        overflow-x: scroll;
+    }
+
+    .secThree{
+        width: calc(100% - 40px);
+        font-size: .5rem;
+        flex-direction: column;
+        margin: auto;
+        padding-bottom: .5rem;
+    }
+
+    .secFour{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #carouselExampleCaptions{
+        display: none;
+    }
+
+    .secSix{
+        width: calc(100% - 40px);
+        margin: auto;
+    }
+
+    .blogs{
+        width: calc(100% - 40px);
+        overflow-x: scroll;
+        margin: auto;
+    }
+
+    .secSeven{
+        flex-direction: column;
+        height: 35vh;
+    }
+
+    .subscribe{
+        width: calc(100% - 40px);
+        font-size: 1rem;
+    }
+
+    .longButt{
+        width: calc(100% - 40px);
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: calc(100% - 40px);
+        margin: auto;
+    }
+
+    .tiny{
+        width: calc(100% - 40px);
+        margin: auto;
+        font-size: .5rem;
+    }
 }
 
 
