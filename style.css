@@ -702,27 +702,21 @@ footer{
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
-
-    body{
-        width: calc(100% - 40px);
-        margin: auto;
-    }
-
     .insideNav{
         width: calc(100% - 40px);
         gap: 15rem;
     }
 
-    .marquee{
+    /* .marquee{
         width: calc(100% - 40px);
         margin: auto;
         display: block;
         text-align: center;
-    }
-
-    /* header{
-        width: calc(100% - 40px);
     } */
+
+    header{
+        width: calc(100% - 40px);
+    }
 
     .hamburger{
         display: block;
