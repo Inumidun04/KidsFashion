@@ -708,6 +708,10 @@ footer{
         gap: 15rem;
     }
 
+    header{
+        width: calc(100% - 40px);
+    }
+
     .hamburger{
         display: block;
         font-size: 1.5rem;
