@@ -703,7 +703,7 @@ footer{
 
 @media (min-width: 320px) and (max-width: 500px) {
     .insideNav{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         gap: 15rem;
     }
 
@@ -715,7 +715,7 @@ footer{
     } */
 
     header{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
     }
 
     .hamburger{
@@ -756,7 +756,7 @@ footer{
     }
 
     .tinyTrend{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         display: block;
     }
 
@@ -778,11 +778,11 @@ footer{
     }
 
     .ourProduct{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
     }
 
     .allProduct{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
     }
     
     .allProduct > h6{
@@ -796,27 +796,27 @@ footer{
         font-size: .7rem;
     }
     .secOne{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         flex-direction: column;
     }
 
     .whoWeAre{
-      width: calc(100% - 40px);  
+      width: calc(100% - 45px);  
     }
     .ourProduct{
-      width: calc(100% - 40px);  
+      width: calc(100% - 45px);  
     }
     .howWeWork{
-      width: calc(100% - 40px);  
+      width: calc(100% - 45px);  
     }
 
     .proItems{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         overflow-x: scroll;
     }
 
     .secThree{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         font-size: .5rem;
         flex-direction: column;
         margin: auto;
@@ -833,12 +833,12 @@ footer{
     }
 
     .secSix{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         margin: auto;
     }
 
     .blogs{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         overflow-x: scroll;
         margin: auto;
     }
@@ -849,23 +849,23 @@ footer{
     }
 
     .subscribe{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         font-size: 1rem;
     }
 
     .longButt{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
     }
 
     .footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         margin: auto;
     }
 
     .tiny{
-        width: calc(100% - 40px);
+        width: calc(100% - 45px);
         margin: auto;
         font-size: .5rem;
     }
